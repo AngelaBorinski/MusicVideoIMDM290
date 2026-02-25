@@ -634,15 +634,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4216859302048453862, guid: 3660776fb13cb534187b61c5d830f16f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 3660776fb13cb534187b61c5d830f16f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 3660776fb13cb534187b61c5d830f16f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 3660776fb13cb534187b61c5d830f16f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -654,7 +654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 3660776fb13cb534187b61c5d830f16f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -960
+      value: -211
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 3660776fb13cb534187b61c5d830f16f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -927,8 +927,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Celestial
   source: {fileID: 0}
-  updateStep: 0.1
-  audioAmp: 0
   songLength: 101
   startPos: []
   endPos: []

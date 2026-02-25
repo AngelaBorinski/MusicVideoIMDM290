@@ -6,10 +6,6 @@ using UnityEngine;
 public class celestial : MonoBehaviour
 {
     public AudioSource source;
-    public float updateStep = 0.1f;
-    public static int FFTSIZE = 1024;
-    public static float[] samples = new float[FFTSIZE];
-    public float audioAmp;
     public float songLength = 101;
 
     static int flyingObjNum = 10;
@@ -19,8 +15,8 @@ public class celestial : MonoBehaviour
 
 
     public float xPos = 1000;
-    public float yPos = 2000;
-    public float zPos = -1000;
+    public float yPos = 400;
+    public float zPos = 3000;
 
     float lerpFraction;
 
@@ -45,9 +41,11 @@ public class celestial : MonoBehaviour
         for (int i = 0; i < flyingObjNum; i++)
         {
             startPos[i] = new Vector3(xPos, yPos, zPos);
+            
+
             float xEndPos = -xPos;
-            float yEndPos = -600;
-            float zEndPos = -800;
+            float yEndPos = -yPos;
+            float zEndPos = zPos;
             endPos[i] = new Vector3(xEndPos, yEndPos, zEndPos);
             xPos -= 200;
 
@@ -60,14 +58,16 @@ public class celestial : MonoBehaviour
     void Update()
     {
 
+
         time += Time.deltaTime;
-        //int objNum = UnityEngine.Random.Range(0, flyingObjNum);
+        int objNum = UnityEngine.Random.Range(0, flyingObjNum);
         float lerpFraction = Mathf.Sin(time) * 0.5f + 0.5f;
 
-        for (int i = 0; i < flyingObjNum; i++)
-        {
-            flyingObjects[i].transform.position = Vector3.Lerp(startPos[i], endPos[i], lerpFraction);
-        }
+
+
+        float audioDrive = AudioSpectrum.piano * 150;
+        float react = Mathf.Clamp01(audioDrive);
+        flyingObjects[objNum].transform.position = Vector3.Lerp(startPos[objNum], endPos[objNum], lerpFraction);
 
         // Lerp logic. Update position
         //flyingObjects[objNum].transform.position = Vector3.Lerp(startPos[objNum], endPos[objNum], lerpFraction);
