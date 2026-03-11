@@ -78,25 +78,25 @@ Material:
     m_Ints: []
     m_Floats:
     - PixelSnap: 0
-    - _BottomExponent: 1.13
-    - _CloudsHeight: -0.04
-    - _CloudsRotation: 22.431185
+    - _BottomExponent: 1
+    - _CloudsHeight: 0
+    - _CloudsRotation: 290.27612
     - _EnableExternalAlpha: 0
     - _Exponent: 1
     - _Exposure: 1
-    - _MoonHalo: 0.5175747
-    - _MoonSize: 0.46
+    - _MoonHalo: 0.4764592
+    - _MoonSize: 0.75
     - _Rotation: 0
-    - _StarsExtinction: 10
-    - _StarsTwinklingSpeed: 25
-    - _SunHalo: 0
-    - _SunSize: 0.1
-    - _TopExponent: 0.55
+    - _StarsExtinction: 2
+    - _StarsTwinklingSpeed: 10
+    - _SunHalo: 1
+    - _SunSize: 0.75
+    - _TopExponent: 0.72
     m_Colors:
-    - _BottomColor: {r: 0.016868481, g: 0, b: 0.47794116, a: 1}
+    - _BottomColor: {r: 1, g: 0, b: 0, a: 1}
     - _CloudsTint: {r: 0.50799215, g: 0.48885787, b: 0.7656204, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _MiddleColor: {r: 0.94518036, g: 0.61960787, b: 1, a: 1}
+    - _MiddleColor: {r: 0.89411765, g: 0.54901963, b: 0.9098039, a: 1}
     - _MoonTint: {r: 0.491, g: 0.53774476, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _SkyBottomColor: {r: 0.016868481, g: 0, b: 0.47794116, a: 0}
@@ -107,8 +107,8 @@ Material:
     - _SkyTint: {r: 0.034482475, g: 0, b: 1, a: 1}
     - _SkyTopColor: {r: 0.2794118, g: 0.6421905, b: 1, a: 0}
     - _StarsTint: {r: 1, g: 1, b: 1, a: 1}
-    - _SunTint: {r: 1, g: 0.85870224, b: 0, a: 1}
+    - _SunTint: {r: 0.703, g: 0.55044055, b: 0.366966, a: 1}
     - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
-    - _TopColor: {r: 0.2794118, g: 0.6421905, b: 1, a: 1}
+    - _TopColor: {r: 0, g: 0.54901963, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
