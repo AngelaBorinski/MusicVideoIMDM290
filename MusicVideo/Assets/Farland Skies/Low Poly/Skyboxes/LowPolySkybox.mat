@@ -80,11 +80,11 @@ Material:
     - PixelSnap: 0
     - _BottomExponent: 1
     - _CloudsHeight: 0
-    - _CloudsRotation: 290.27612
+    - _CloudsRotation: 66.24552
     - _EnableExternalAlpha: 0
     - _Exponent: 1
     - _Exposure: 1
-    - _MoonHalo: 0.4764592
+    - _MoonHalo: 0.33476782
     - _MoonSize: 0.75
     - _Rotation: 0
     - _StarsExtinction: 2
